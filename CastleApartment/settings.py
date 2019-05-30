@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'Properties.apps.PropertiesConfig',
     'Transactions.apps.TransactionsConfig',
     'User.apps.UserConfig',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [

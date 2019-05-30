@@ -1,6 +1,8 @@
 from django.shortcuts import render
+from Properties.models import Properties
 
 
 # Create your views here.
 def catalog(request):
-    return render(request, 'Properties/Catalog.html')
+    context = {'properties': Properties.objects.all()}
+    return render(request, 'Properties/Catalog.html', context)

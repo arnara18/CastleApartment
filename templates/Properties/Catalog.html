@@ -1,4 +1,8 @@
 {% extends 'Base.html' %}
 {% block content %}
-    <p>Hello from inside catalog</p>
+    {% if properties.count > 0 %}
+        {% for properties in properties %}
+            {% include 'Properties/SinglePropertyView.html' with properties=properties %}
+        {% endfor %}
+    {% endif %}
 {% endblock %}

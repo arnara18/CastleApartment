@@ -2,6 +2,9 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
+# Make validation
+# Look into built in validators
+
 # Create your models here.
 class Types(models.Model):
     type = models.CharField(max_length=50)

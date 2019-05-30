@@ -16,16 +16,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="FrontPage/FrontPage.html">Front Page</a>
+                <a class="nav-link" href="{% url 'front_page' %}">Front Page</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="Properties/Catalog.html">Catalog</a>
+                <a class="nav-link" href="{% url 'catalog' %}">Catalog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="FrontPage/AboutUs.html">About Us</a>
+                <a class="nav-link" href="{% url 'about_us' %}">About Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="FrontPage/TermsAndConditions.html">Terms And Conditions</a>
+                <a class="nav-link" href="{% url 'terms_and_conditions' %}">Terms And Conditions</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</a>
